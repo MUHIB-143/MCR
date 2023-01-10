@@ -168,7 +168,7 @@ def xxr():
         jalan(f'{x}[{xr}^{x}]\033[0;92m CRACKING PROCESS HAS BEEN STARTED')
         jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR SIM  ')
         jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUSE FLIGHT MODE FOR SPEED')
-        jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mMUHIB-143 ON FIRE)
+        jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mMUHIB-143 ON FIRE')
         jalan('\033[1;97m====================================================')
         for love in user:
             pwx = [love[1:]]

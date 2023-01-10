@@ -61,7 +61,7 @@ ha = current.day
 today = date.today()
 os.system('xdg-open https://www.facebook.com/its.muhib.7?ref=share_group_link')
 os.system('xdg-open https://www.facebook.com/its.muhib.7?ref=share_group_link')
-logo =("""\033[1;92m
+logo =("""\033[0;92m
   [1;92m███    ███[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██████ 
   [1;92m████  ████[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██   ██
   [1;92m██ ████ ██[1;92m ██      ██[1;92m ███████[1;92m ██[1;92m ██████   

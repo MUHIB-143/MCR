@@ -68,7 +68,7 @@ logo =("""\033[1;92m
   [1;92m██  ██  ██[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██   ██
   [1;92m██      ██[1;92m ██████████[1;92m ██   ██[1;92m ██[1;92m ██████
 [1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗[1;92m
-[1;92m║  [1;92m[1;41m    FREE  NUMBER CLONING V1     [1;0m[1;92m║[1;92m
+[1;92m║  [1;92m[1;41m    FREE  NUMBER CLONING V1    [1;94m[1;92m║[1;92m
 [1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝[1;92m
 [1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗[1;92m
 [1;92m║➣ [1;92mDEVOLPER   :          MUHIB-143 [1;92m          ║
@@ -119,7 +119,7 @@ for xd in range(10000):
     e=random.randrange(1, 999)
     f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-    h=random.randrange(73,100)
+    h=random.randrange(10,100)
     i='0'
     j=random.randrange(4200,4900)
     k=random.randrange(40,150)
@@ -160,11 +160,8 @@ def xxr():
         clear()
         tl = str(len(user))
         jalan('\033[1;97m====================================================')
-        jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL ID: {xr}'+tl)
-        jalan(f'{x}[{xr}^{x}]\033[0;92m CRACKING PROCESS HAS BEEN STARTED')
-        jalan(f'\033[0;92m[{xr}^{x}]\033[0;93m USE YOUR SIM  ')
-        jalan(f'\033[0;92m[{xr}^{x}] \x1b[38;5;208mUSE FLIGHT MODE FOR SPEED')
-        jalan(f'\033[0;92m[{xr}^{x}] \033[0;95mMUHIB-143 ON FIRE')
+        jalan(f'[{xr}^{x}]\x1b[1;92m YOUR TOTAL ID: {xr}'+tl)
+        jalan(f'{x}[{xr}^{x}]\033[1;92m CRACKING ON')
         jalan('\033[1;972====================================================')
         for love in user:
             pwx = [love[1:]]
@@ -173,7 +170,7 @@ def xxr():
                 pwx.append(Eman)
                 pwx.append(love)
             manshera.submit(rcrack,uid,pwx,tl)
-    print(f"\n{x} ══════════════════════════════════════════")
+    print(f"\n{x} ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 def rcrack(uid,pwx,tl):
     #print(user)
     global loop

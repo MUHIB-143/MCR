@@ -61,7 +61,7 @@ ha = current.day
 today = date.today()
 os.system('xdg-open https://www.facebook.com/its.muhib.7?ref=share_group_link')
 logo =("""\033[0;92m
-[1;90m[[1;92mMUHIB [1;90m]-[[1;96m�[1;90m�[1;91m🕧�[1;91m🕖�[1;91m�[1;91m Connection Problem, Please Check Your Internet And Run Again�[1;91m Tool is Currenty Off�[1;92m🕐�[1;92m┣━[•][1;92m NOTE : [1;97m[1;41mSLOW CRACKING[1;0m🍼�[1;92m┣━[•][1;92m SIM CODE :[1;37m �[1;92m┗━[•][1;92m START BD UID CRACKING...�[1;92m┗━[•][1;92m START BD UID MIXT CRACKING...�[1;92m┗━[•][1;92m START GMAIL CRACKING...�[1;92m┗━[•][1;92m START INDIAN UID CRACKING...�[1;92m┣━[•][1;92m TOTAL GMAIL : [1;97m�[1;92m┣━[•][1;92m TOTAL ID : [1;97m�[1;92m┏━[•][1;92m USER NAME [1;97m: �[1;92m[•] [1;93mWHAT IS YOUR NAME : �[1;92m███    ███ [1;94m ██      ██ [1;93m ██   ██ [1;91m ██ [1;95m██████  
+[1;92m███    ███ [1;94m ██      ██ [1;93m ██   ██ [1;91m ██ [1;95m██████  
 [1;92m████  ████[1;94m ██      ██[1;93m ██   ██[1;91m ██[1;95m ██         ██
 [1;92m██ ████ ██[1;94m ██      ██[1;93m ███████[1;91m ██[1;95m ██████
 [1;92m██  ██  ██[1;94m ██      ██[1;93m ██   ██[1;91m ██[1;95m ██         ██
@@ -103,7 +103,7 @@ try:
     if str(v) in update:
         os.system('clear')
     else:pass
-except:print('\n\033[1;31mNo internet connection ... \033[0;97m')
+except:print('\n\033[1;31mCHACK INTERNET CONNECTION... \033[0;97m')
 #global functions
 def dynamic(text):
     titik = ['.   ','..  ','... ','.... ']
@@ -164,11 +164,11 @@ def xxr():
         clear()
         tl = str(len(user))
         jalan('\033[1;97m====================================================')
-        jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL IDS: {xr}'+tl)
-        jalan(f'{x}[{xr}^{x}]\033[0;92m PLEASE WAIT YOUR CLONING PROCESS HAS BEEN STARTED')
-        jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR MOBILE DATA ')
-        jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUse Flight Mode For Speed Up')
-        jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mSuper Fast Speed Cloning')
+        jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL ID: {xr}'+tl)
+        jalan(f'{x}[{xr}^{x}]\033[0;92m CRACKING PROCESS HAS BEEN STARTED')
+        jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR SIM  ')
+        jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUSE FLIGHT MODE FOR SPEED')
+        jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mMUHIB-143 ON FIRE)
         jalan('\033[1;97m====================================================')
         for love in user:
             pwx = [love[1:]]

